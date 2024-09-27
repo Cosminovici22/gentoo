@@ -1,0 +1,47 @@
+#!/bin/sh
+
+config="
+	/etc/X11/xorg.conf.d/monitor.conf
+	/etc/X11/xorg.conf.d/mouse.conf
+	/etc/X11/xorg.conf.d/screen-blank.conf
+	/etc/X11/xorg.conf.d/touchpad.conf
+	/etc/bash/bashrc.d/utils.bash
+	/etc/cron.weekly/trim.sh
+	/etc/elogind/sleep.conf.d/suspend-mode.conf
+	/etc/env.d/90xsession
+	/etc/fstab
+	/etc/hostname
+	/etc/hosts
+	/etc/i3/config
+	/etc/i3status.conf
+	/etc/inittab
+	/etc/modprobe.d/blacklist.conf
+	/etc/modprobe.d/nvidia2.conf
+	/etc/ntp.conf
+	/etc/polkit-1/rules.d/backlight.rules
+	/etc/polkit-1/rules.d/conservation-mode.rules
+	/etc/portage/make.conf
+	/etc/portage/package.accept_keywords/elogind
+	/etc/portage/package.accept_keywords/firefox
+	/etc/portage/package.accept_keywords/steam-launcher
+	/etc/portage/package.use/cups-filters
+	/etc/portage/package.use/firefox
+	/etc/portage/package.use/hplip
+	/etc/portage/package.use/iproute2
+	/etc/portage/package.use/libreoffice
+	/etc/portage/package.use/nvidia-drivers
+	/etc/portage/package.use/openrc
+	/etc/portage/package.use/steam-launcher
+	/etc/sysctl.d/i915-perf.conf
+	/etc/sysctl.d/system-security.conf
+	/etc/syslog.conf
+	/etc/timezone
+	/etc/udev/rules.d/power-supply.rules
+	/etc/udev/rules.d/rfkill.rules
+	/etc/udev/rules.d/runtime-pm.rules
+	/etc/xdg/picom.conf
+	/home/default/.bash_profile
+	/home/default/.config/gtk-3.0/settings.ini
+	/home/default/.mozilla/firefox/*.default-esr/user.js
+"
+mkdir backup && cp --parents --recursive $config backup/ && chown -R default:users backup/

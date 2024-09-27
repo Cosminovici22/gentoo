@@ -1,0 +1,4 @@
+PARTUUID=c12a7328-f81f-11d2-ba4b-00a0c93ec93b /efi vfat defaults 0 2
+PARTUUID=4f68bce3-e8cd-4db1-96e7-fbcaf984b709 / ext4 defaults 0 1
+tmpfs /tmp tmpfs defaults,nosuid,nodev,noexec 0 0
+tmpfs /var/tmp tmpfs defaults,nosuid,nodev 0 0

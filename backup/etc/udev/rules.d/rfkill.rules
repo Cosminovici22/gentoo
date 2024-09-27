@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="rfkill", ATTR{type}=="wlan", ATTR{state}="1"

@@ -1,0 +1,12 @@
+ACTION=="add|change", SUBSYSTEM=="power_supply", KERNEL=="ADP0", ATTR{online}=="0", RUN+="/bin/sh -c ' \
+	echo powersave | tee /sys/devices/system/cpu/cpufreq/policy*/scaling_governor > /dev/null; \
+	echo power | tee /sys/devices/system/cpu/cpufreq/policy*/energy_performance_preference > /dev/null; \
+	echo power | tee /sys/devices/system/cpu/cpu*/power/energy_perf_bias > /dev/null; \
+	echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo; \
+	echo 0 > /sys/devices/system/cpu/intel_pstate/hwp_dynamic_boost'"
+ACTION=="add|change", SUBSYSTEM=="power_supply", KERNEL=="ADP0", ATTR{online}=="1", RUN+="/bin/sh -c ' \
+	echo performance | tee /sys/devices/system/cpu/cpufreq/policy*/scaling_governor > /dev/null; \
+	echo performance | tee /sys/devices/system/cpu/cpufreq/policy*/energy_performance_preference > /dev/null; \
+	echo performance | tee /sys/devices/system/cpu/cpu*/power/energy_perf_bias > /dev/null; \
+	echo 0 > /sys/devices/system/cpu/intel_pstate/no_turbo; \
+	echo 1 > /sys/devices/system/cpu/intel_pstate/hwp_dynamic_boost'"

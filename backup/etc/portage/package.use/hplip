@@ -1,0 +1,3 @@
+dev-python/pillow truetype
+media-gfx/sane-backends -zeroconf -sane_backends_*
+net-print/hplip scanner -snmp

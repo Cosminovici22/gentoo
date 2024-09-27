@@ -1,0 +1,6 @@
+polkit.addRule(function(action, subject) {
+	_ = "/usr/bin/tee /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode";
+	return action.id == "org.freedesktop.policykit.exec" && action.lookup("command_line") == _
+		? polkit.Result.YES
+		: polkit.Result.NOT_HANDLED;
+});

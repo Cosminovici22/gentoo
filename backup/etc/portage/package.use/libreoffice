@@ -1,0 +1,3 @@
+app-text/xmlto text
+dev-libs/xmlsec nss
+media-libs/harfbuzz icu

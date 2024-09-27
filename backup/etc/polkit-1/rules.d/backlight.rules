@@ -1,0 +1,7 @@
+polkit.addRule(function(action, subject) {
+	_1 = "/usr/bin/tee /sys/class/backlight/nvidia_wmi_ec_backlight/brightness";
+	_2 = "/usr/bin/tee /sys/class/backlight/nvidia_0/brightness";
+	return action.id == "org.freedesktop.policykit.exec" && (action.lookup("command_line") == _1 || action.lookup("command_line") == _2)
+		? polkit.Result.YES
+		: polkit.Result.NOT_HANDLED;
+});
