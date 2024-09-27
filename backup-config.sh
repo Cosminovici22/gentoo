@@ -33,6 +33,7 @@ config="
 	/etc/portage/package.use/nvidia-drivers
 	/etc/portage/package.use/openrc
 	/etc/portage/package.use/steam-launcher
+	/etc/profile.d/xdg-base-dirs.sh
 	/etc/sysctl.d/i915-perf.conf
 	/etc/sysctl.d/system-security.conf
 	/etc/syslog.conf
