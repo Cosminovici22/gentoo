@@ -24,6 +24,7 @@ config="
 	/etc/portage/package.accept_keywords/elogind
 	/etc/portage/package.accept_keywords/firefox
 	/etc/portage/package.accept_keywords/steam-launcher
+	/etc/portage/package.accept_keywords/sublime-text
 	/etc/portage/package.use/cups-filters
 	/etc/portage/package.use/firefox
 	/etc/portage/package.use/hplip
