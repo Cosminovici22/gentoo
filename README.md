@@ -29,7 +29,7 @@ emerge -n \
 	libpulse rtkit \
 	cups-filters hplip \
 	dosfstools gentoolkit bash-completion dev-vcs/git simple-mtpfs \
-	firefox:esr libreoffice sublime-text steam-launcher
+	firefox libreoffice sublime-text steam-launcher
 emerge -uDN @world
 emerge -c
 ```

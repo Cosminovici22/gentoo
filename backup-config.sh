@@ -16,13 +16,11 @@ config="
 	/etc/i3status.conf
 	/etc/inittab
 	/etc/modprobe.d/blacklist.conf
-	/etc/modprobe.d/nvidia2.conf
 	/etc/ntp.conf
 	/etc/polkit-1/rules.d/backlight.rules
 	/etc/polkit-1/rules.d/conservation-mode.rules
 	/etc/portage/make.conf
 	/etc/portage/package.accept_keywords/elogind
-	/etc/portage/package.accept_keywords/firefox
 	/etc/portage/package.accept_keywords/steam-launcher
 	/etc/portage/package.accept_keywords/sublime-text
 	/etc/portage/package.use/cups-filters
@@ -34,8 +32,7 @@ config="
 	/etc/portage/package.use/openrc
 	/etc/portage/package.use/steam-launcher
 	/etc/profile.d/xdg-base-dirs.sh
-	/etc/sysctl.d/i915-perf.conf
-	/etc/sysctl.d/system-security.conf
+	/etc/sysctl.d/local.conf
 	/etc/syslog.conf
 	/etc/timezone
 	/etc/udev/rules.d/power-supply.rules
