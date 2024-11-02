@@ -1,6 +1,7 @@
 #!/bin/sh
 
-config="
+IFS=$'\n\t'
+FILES="
 	/etc/X11/xorg.conf.d/monitor.conf
 	/etc/X11/xorg.conf.d/mouse.conf
 	/etc/X11/xorg.conf.d/screen-blank.conf
@@ -41,6 +42,8 @@ config="
 	/etc/xdg/picom.conf
 	/home/default/.bash_profile
 	/home/default/.config/gtk-3.0/settings.ini
+	/home/default/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap
+	/home/default/.config/sublime-text/Packages/User/Preferences.sublime-settings
 	/home/default/.mozilla/firefox/*.default-esr/user.js
 "
-mkdir backup && cp --parents --recursive $config backup/ && chown -R default:users backup/
+mkdir backup && cp --parents --recursive $FILES backup/ && chown -R default:users backup/
