@@ -7,6 +7,7 @@ FILES="
 	/etc/X11/xorg.conf.d/screen-blank.conf
 	/etc/X11/xorg.conf.d/touchpad.conf
 	/etc/bash/bashrc.d/utils.bash
+	/etc/bash/bashrc.d/qemu.bash
 	/etc/cron.weekly/trim.sh
 	/etc/elogind/sleep.conf.d/suspend-mode.conf
 	/etc/env.d/90xsession
@@ -31,6 +32,7 @@ FILES="
 	/etc/portage/package.use/libreoffice
 	/etc/portage/package.use/nvidia-drivers
 	/etc/portage/package.use/openrc
+	/etc/portage/package.use/qemu
 	/etc/portage/package.use/steam-launcher
 	/etc/profile.d/xdg-base-dirs.sh
 	/etc/sysctl.d/local.conf

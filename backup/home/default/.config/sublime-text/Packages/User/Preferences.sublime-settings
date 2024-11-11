@@ -2,7 +2,7 @@
 	"color_scheme": "Mariana.sublime-color-scheme",
 	"theme": "Default Dark.sublime-theme",
 	"ui_scale": 1.25,
-	"rulers": [80],
+	"rulers": [80, 100, 120],
 	"shift_tab_unindent": true,
 	"trim_trailing_white_space_on_save": "all",
 	"ensure_newline_at_eof_on_save": true,
@@ -10,4 +10,8 @@
 	"hide_new_tab_button": true,
 	"overlay_scroll_bars": "disabled",
 	"hot_exit": "disabled",
+	"remember_workspace": false,
+	"folder_exclude_patterns": [],
+	"file_exclude_patterns": [],
+	"font_size": 10,
 }
