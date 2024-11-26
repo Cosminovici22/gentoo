@@ -14,4 +14,6 @@
 	"folder_exclude_patterns": [],
 	"file_exclude_patterns": [],
 	"font_size": 10,
+	"translate_tabs_to_spaces": true,
+	"bold_folder_labels": true,
 }

@@ -9,7 +9,6 @@ FILES="
 	/etc/bash/bashrc.d/utils.bash
 	/etc/bash/bashrc.d/qemu.bash
 	/etc/cron.weekly/trim.sh
-	/etc/elogind/sleep.conf.d/suspend-mode.conf
 	/etc/env.d/90xsession
 	/etc/fstab
 	/etc/hostname
@@ -22,7 +21,6 @@ FILES="
 	/etc/polkit-1/rules.d/backlight.rules
 	/etc/polkit-1/rules.d/conservation-mode.rules
 	/etc/portage/make.conf
-	/etc/portage/package.accept_keywords/elogind
 	/etc/portage/package.accept_keywords/steam-launcher
 	/etc/portage/package.accept_keywords/sublime-text
 	/etc/portage/package.use/cups-filters
@@ -47,5 +45,6 @@ FILES="
 	/home/default/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap
 	/home/default/.config/sublime-text/Packages/User/Preferences.sublime-settings
 	/home/default/.mozilla/firefox/*.default-esr/user.js
+	/var/lib/portage/world
 "
 mkdir backup && cp --parents --recursive $FILES backup/ && chown -R default:users backup/

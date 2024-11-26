@@ -16,6 +16,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id echo $(( $(cat $brightness) -
 set $conservation_mode /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
 bindsym XF86Calculator exec --no-startup-id echo $(( ! $(cat $conservation_mode) )) | pkexec tee $conservation_mode > /dev/null
 
+bindsym Print exec --no-startup-id scrot ~/pics/%d-%m-%Y_%H:%M:%S.png
+
 tiling_drag titlebar
 
 bindsym Mod4+Shift+Return exec --no-startup-id alacritty --option font.size=8

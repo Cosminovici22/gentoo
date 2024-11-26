@@ -5,5 +5,6 @@ sudo() { su -mc "$*"; }
 cd() { command cd -P "$@" && ls; }
 cp() { command cp -i "$@"; }
 mv() { command mv -i "$@"; }
+rm() { command rm -Ir "$@"; }
 
 ! shopt -q login_shell && ls

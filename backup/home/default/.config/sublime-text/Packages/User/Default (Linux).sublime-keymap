@@ -3,6 +3,9 @@
 	{ "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
 	{ "keys": ["ctrl+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
 	{ "keys": ["ctrl+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+	{ "keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+	{ "keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
 	{ "keys": ["ctrl+up"], "command": "chain", "args": { "commands": [
 		{ "command": "expand_selection_to_paragraph" },
 		{ "command": "move", "args": { "by": "lines", "forward": false } } ] }
