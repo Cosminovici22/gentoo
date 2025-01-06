@@ -2,6 +2,7 @@
 
 IFS=$'\n\t'
 FILES="
+	/etc/X11/xorg.conf.d/keyboard.conf
 	/etc/X11/xorg.conf.d/monitor.conf
 	/etc/X11/xorg.conf.d/mouse.conf
 	/etc/X11/xorg.conf.d/screen-blank.conf
@@ -32,7 +33,7 @@ FILES="
 	/etc/portage/package.use/openrc
 	/etc/portage/package.use/qemu
 	/etc/portage/package.use/steam-launcher
-	/etc/profile.d/xdg-base-dirs.sh
+	/etc/profile.d/xdg-cache.sh
 	/etc/sysctl.d/local.conf
 	/etc/syslog.conf
 	/etc/timezone
@@ -41,7 +42,7 @@ FILES="
 	/etc/udev/rules.d/runtime-pm.rules
 	/etc/xdg/picom.conf
 	/home/default/.bash_profile
-	/home/default/.config/gtk-3.0/settings.ini
+	/home/default/.config/sublime-text/Packages/User/Default (Linux).sublime-mousemap
 	/home/default/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap
 	/home/default/.config/sublime-text/Packages/User/Preferences.sublime-settings
 	/home/default/.mozilla/firefox/*.default-esr/user.js

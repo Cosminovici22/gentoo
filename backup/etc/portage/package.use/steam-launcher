@@ -22,7 +22,7 @@ net-libs/libasyncns abi_x86_32
 sys-apps/dbus abi_x86_32
 sys-apps/systemd-utils abi_x86_32
 sys-apps/util-linux abi_x86_32
-sys-devel/llvm abi_x86_32
+llvm-core/llvm abi_x86_32
 sys-libs/glibc hash-sysv-compat
 sys-libs/libcap abi_x86_32
 sys-libs/libudev-compat abi_x86_32
