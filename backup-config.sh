@@ -33,7 +33,6 @@ FILES="
 	/etc/portage/package.use/openrc
 	/etc/portage/package.use/qemu
 	/etc/portage/package.use/steam-launcher
-	/etc/profile.d/xdg-cache.sh
 	/etc/sysctl.d/local.conf
 	/etc/syslog.conf
 	/etc/timezone
