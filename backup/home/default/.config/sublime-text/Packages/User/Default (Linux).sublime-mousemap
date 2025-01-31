@@ -1,6 +1,6 @@
 [
-    { "button": "scroll_down", "modifiers": ["ctrl"], "command": false },
-    { "button": "scroll_up", "modifiers": ["ctrl"], "command": false },
+    { "button": "scroll_down", "modifiers": ["ctrl"], "command": "" },
+    { "button": "scroll_up", "modifiers": ["ctrl"], "command": "" },
     { "button": "button1", "count": 1, "modifiers": ["ctrl"], "press_command": false },
     { "button": "button1", "count": 1, "modifiers": ["alt"], "press_command": false },
 ]

@@ -1,5 +1,6 @@
 app-admin/sysklogd
 app-editors/sublime-text
+app-emulation/qemu
 app-office/libreoffice
 app-portage/gentoolkit
 app-shells/bash-completion
