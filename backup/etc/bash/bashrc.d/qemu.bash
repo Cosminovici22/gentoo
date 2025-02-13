@@ -8,7 +8,7 @@ qemu() {
 		-drive file="${@:$#}",if=virtio,cache=none,aio=native \
 		-usbdevice tablet \
 		-display gtk,gl=on,show-cursor=on,full-screen=on \
-		-nic user,model=virtio-net-pci,hostfwd=tcp::5555-:22 \
+		-nic tap,ifname=tap0,script=no,downscript=no,vhost=on,model=virtio-net-pci \
 		-vga virtio \
 		"${@:1:$#-1}"
 }

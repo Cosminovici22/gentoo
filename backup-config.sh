@@ -17,6 +17,9 @@ FILES="
 	/etc/i3/config
 	/etc/i3status.conf
 	/etc/inittab
+	/etc/locale.gen
+	/etc/local.d/tap.start
+	/etc/local.d/tap.stop
 	/etc/modprobe.d/blacklist.conf
 	/etc/ntp.conf
 	/etc/polkit-1/rules.d/backlight.rules
@@ -27,7 +30,6 @@ FILES="
 	/etc/portage/package.use/cups-filters
 	/etc/portage/package.use/firefox
 	/etc/portage/package.use/hplip
-	/etc/portage/package.use/iproute2
 	/etc/portage/package.use/libreoffice
 	/etc/portage/package.use/nvidia-drivers
 	/etc/portage/package.use/openrc
@@ -45,6 +47,8 @@ FILES="
 	/home/default/.config/sublime-text/Packages/User/Default (Linux).sublime-keymap
 	/home/default/.config/sublime-text/Packages/User/Preferences.sublime-settings
 	/home/default/.mozilla/firefox/*.default-esr/user.js
+	/var/lib/ip6tables/rules-save
+	/var/lib/iptables/rules-save
 	/var/lib/portage/world
 "
 mkdir backup && cp --parents --recursive $FILES backup/ && chown -R default:users backup/

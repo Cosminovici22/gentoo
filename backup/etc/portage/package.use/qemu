@@ -1,1 +1,1 @@
-app-emulation/qemu -curl -gnutls -oss -vhost-net -vnc gtk
+app-emulation/qemu -curl -gnutls -oss -slirp -vnc gtk

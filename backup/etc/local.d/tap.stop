@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+
+/usr/bin/ip link set dev tap0 down
+/usr/bin/ip addr del 1.0.0.1/8 dev tap0
+/usr/bin/ip link del tap0
