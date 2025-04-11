@@ -9,7 +9,6 @@ games-util/steam-launcher
 media-gfx/scrot
 media-libs/libpulse
 media-libs/libva-intel-media-driver
-net-dialup/minicom
 net-misc/dhcpcd
 net-misc/ntp
 net-print/cups-filters
