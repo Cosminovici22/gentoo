@@ -1,1 +1,2 @@
 app-emulation/qemu -curl -gnutls -oss -slirp -vnc gtk
+dev-util/spirv-tools abi_x86_32

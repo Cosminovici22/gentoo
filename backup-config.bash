@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 IFS=$'\n\t'
 FILES="
@@ -37,7 +37,6 @@ FILES="
 	/etc/portage/package.use/steam-launcher
 	/etc/sysctl.d/local.conf
 	/etc/syslog.conf
-	/etc/timezone
 	/etc/udev/rules.d/power-supply.rules
 	/etc/udev/rules.d/rfkill.rules
 	/etc/udev/rules.d/runtime-pm.rules

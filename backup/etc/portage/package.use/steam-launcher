@@ -23,11 +23,13 @@ sys-apps/dbus abi_x86_32
 sys-apps/systemd-utils abi_x86_32
 sys-apps/util-linux abi_x86_32
 llvm-core/llvm abi_x86_32
+sys-libs/gdbm abi_x86_32
 sys-libs/glibc hash-sysv-compat
 sys-libs/libcap abi_x86_32
 sys-libs/libudev-compat abi_x86_32
 sys-libs/ncurses abi_x86_32
 sys-libs/pam abi_x86_32
+sys-libs/readline abi_x86_32
 sys-libs/zlib abi_x86_32
 virtual/libiconv abi_x86_32
 virtual/libintl abi_x86_32

@@ -1,16 +1,24 @@
 [
 	{ "keys": ["ctrl+q"], "command": "" },
-	{ "keys": ["ctrl+w"], "command": "" },
+	{ "keys": ["ctrl+home"], "command": "" },
+	{ "keys": ["ctrl+end"], "command": "" },
+	{ "keys": ["ctrl+shift+home"], "command": "" },
+	{ "keys": ["ctrl+shift+end"], "command": "" },
 	{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
+	{ "keys": ["ctrl+shift+v"], "command": "paste" },
 
 	{ "keys": ["ctrl+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
 	{ "keys": ["ctrl+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	{ "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol"} },
 	{ "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol"} },
+	{ "keys": ["home"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+	{ "keys": ["end"], "command": "move_to", "args": {"to": "eof", "extend": false} },
 
 	{ "keys": ["ctrl+a"], "command": "select_all", "context": [{ "key": "preceding_text", "operator": "regex_match", "operand": "^[\t ]*" }] },
 	{ "keys": ["ctrl+shift+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true, "extend": true} },
 	{ "keys": ["ctrl+shift+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false, "extend": true} },
 	{ "keys": ["ctrl+shift+a"], "command": "move_to", "args": {"to": "bol", "extend": true} },
 	{ "keys": ["ctrl+shift+e"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+	{ "keys": ["shift+home"], "command": "move_to", "args": {"to": "bof", "extend": true} },
+	{ "keys": ["shift+end"], "command": "move_to", "args": {"to": "eof", "extend": true} },
 ]
